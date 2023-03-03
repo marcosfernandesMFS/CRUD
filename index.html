@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="script.js" defer></script>
+    <title>CRUD</title>
+</head>
+
+<body>
+    <header>
+        <h1 class>Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type="button" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table id="tableClient">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Data de Nascimento</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div>
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span id="modalClose"></span>
+                </header>
+                <form id="form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"
+                        required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
+                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
+                    <input type="date" id="data"  class="modal-field" placeholder="Data de nascimento" required>
+                </form>
+                <footer>
+                    <button id="salvar" class="button 1">Salvar</button>
+                    <button id="cancelar" class="button 2">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+   
+</body>
+
+</html>
